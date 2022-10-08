@@ -1,0 +1,11 @@
+{
+  "name": "orange-css",
+  "version": "1.0.0",
+  "description": "The best css for make a website.",
+  "main": "OCSS.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Orange Dev <coding.orangedev@gmail.com>",
+  "license": "MIT"
+}

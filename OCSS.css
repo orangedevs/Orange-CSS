@@ -1,0 +1,599 @@
+html {
+    scroll-behavior: smooth;
+  font-family:sans-serif;
+  flex-direction: column;
+  display: flex;
+  }
+  .navbg{
+       color:white;
+       background-color: rgb(0, 102, 255);
+       height:100%;
+       width:16%;
+       border-radius: 5px;
+       position:fixed !important;
+       top: 0%;
+       overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    z-index: 1; 
+   }
+   .navbtn{
+       color: white;
+       background-color: rgba(255, 255, 255, 0.315);
+       border: none;
+       border-radius: 10px;
+       width: 200px;
+       height: 30px;
+   }
+   .navbtn:hover{
+       background-color: rgba(0, 0, 255, 0.247);
+   }
+    .navtb{
+     background-color: rgba(255, 255, 255, 0.315);
+      border-radius: 10px;
+       width: 200px;
+       height: 30px;
+       border:none;
+       outline: none;
+   }
+    .navbtn:active{
+       background-color: rgba(0, 0, 255, 0.247);
+   }
+   .navclosebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .navopenbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(0, 132, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+  }
+  .navopenbtn:hover {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 132, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+  }
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+   .demonavbg{
+       color:white;
+       background-color: rgb(57, 57, 57);
+       height:100%;
+       width:20%;
+       border-radius: 5px;
+       position:fixed !important;
+       top: 0%;
+   }
+   .darknavbtn{
+       color: white;
+       background-color: rgba(255, 255, 255, 0.315);
+       border: none;
+       border-radius: 10px;
+       width: 200px;
+       height: 30px;
+   }
+   .darknavbtn:hover{
+       background-color: rgba(133, 133, 133, 0.247);
+   }
+    .darknavbtn:active{
+       background-color: rgba(0, 0, 255, 0.247);
+   }
+   .darknavtb{
+     background-color: rgba(255, 255, 255, 0.315);
+      border-radius: 10px;
+       width: 200px;
+       height: 30px;
+       border: none;
+       outline: none;
+   }
+   /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: lightgrey; 
+    width:5px;
+  }
+  /*all theme btn*/
+  .btn{
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    min-width: 110px;
+    height: 37px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+  .btn:hover{
+    transition-duration: 0.1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius: 5px;
+  }
+  .btn:active {
+    transition: all 0.2s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  top: 3px;
+  }
+  .btn:after{
+    content: "";
+    background: #b9b9b9;
+    border-radius:50px;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -50px !important;
+    margin-top: -120%;
+    opacity: 50%;
+    transition: all 0.8s
+  }
+  .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  .btn:focus { outline:0; }
+  .dark:hover {
+    border: none;
+    background-color: rgb(75, 75, 75);
+    color:white;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;border-radius: 5px !important;
+  }
+  .dark:after{
+    background-color: rgba(197, 197, 197, 0.379) !important;
+  }
+  .dark{
+    color:white;
+    background-color: #111;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px !important;
+  }
+  .light:hover {
+    border: none;
+    background-color: rgb(207, 207, 207);
+    color:black;
+  }
+  .light{
+    color:black;
+    background-color: rgb(239, 239, 239);
+  }
+  .light:after{
+    background-color: white;
+  }
+  .pri:hover {
+    border: none;
+    background-color: rgb(0, 110, 255);
+    color:white;
+  }
+  .pri:after{
+    background-color: rgb(107, 171, 255);
+  }
+  .pri{
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 89, 255);
+  }
+  .success:hover {
+    border: none;
+    background-color: rgb(0, 141, 19);
+    color:white;
+  }
+  .success:after{
+    background-color: rgb(148, 255, 163);
+  }
+  .success{
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 180, 24);
+  }
+  .warn:hover {
+    border: none;
+    background-color: rgb(255, 187, 0);
+    color:black;
+  }
+  .warn{
+    color:black;
+    background-color: rgb(255, 208, 0);
+  }
+  .warn:after{
+    background-color: rgb(255, 235, 147);
+  }
+  .error:hover {
+    border: none;
+    background-color: rgb(211, 0, 0);
+    color:white;
+  }
+  .error:after{
+    background-color: rgb(255, 150, 150)
+  }
+  .error{
+    color:rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+  }
+  .tb{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    min-height: 34px;
+    width: 150px;
+    outline: none;
+  background-color:white !Important;
+  color:black !Important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  
+  .tb:active{
+    border: 1px solid lightgrey !Important;
+  }
+  .tb:hover{border: 1px solid lightgrey;
+    border-radius: 5px;
+    min-height: 34px;
+    width: 150px;
+    outline: none;
+  background-color:white !Important;
+  color:black !Important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  .tb.dark{
+  background-color:#030043!Important;
+  color:white!Important;
+  }
+  .tb:focus{border:2px solid rgba(134, 134, 255, 0.605)}
+  .tb.dark:focus{border:3px solid rgb(0, 242, 255) !important}
+.tb.dark::placeholder{color:#d9dbda}
+  .mform{
+    width: 30%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+  }
+  .mform input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    border: none;SMS Alexandra Valance Birmingham.
+    
+  }
+  .mform label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+  }
+  .mform label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid black;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  .mform input:focus {
+    outline: none;
+  }
+  .mform input:focus + .label-name .content-name,
+  .mform input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    left: 0px;
+    color: rgb(28, 0, 99);
+    font-weight: bold;
+  }
+  .mform input:focus + .label-name::after,
+  .mform input:valid + .label-name::after {
+    transform: translateX(0%);
+  }
+  .form{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding-top:40px;
+  min-width:200px;
+  max-width:600px;
+  text-align:center;
+  min-height:300px;
+  border-radius:10px !Important;
+  }
+  
+  .link{font-size:15px;color:blue;}
+  .form.dark{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding-top:40px;
+  min-width:200px;
+  max-width:600px;
+  text-align:center;
+  min-height:300px;
+  background: black!Important;
+  }
+  .form.dark:hover{
+  background: black;
+  border-radius:10px !Important;
+  }
+  /* nav bar */
+  .navContainer {
+    align-items: center;
+    background: #eeedef;
+    display: flex;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 360px;
+    border-radius: 50px;
+  }
+  .bar {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    height: 32px;
+    left: 0;
+    padding: 0 21px;
+    position: absolute;
+    width: 100%;
+  }
+  .bar-color {
+    background: #006eff;
+    color: white;
+    clip-path: polygon(
+      360px 0,
+      360px 32px,
+      43px 32px,
+      39.775442px 31.67494px,
+      36.772078px 30.74264px,
+      34.054248px 29.26745px,
+      31.686292px 27.31371px,
+      29.732549px 24.94575px,
+      28.257359px 22.22792px,
+      27.325063px 19.22456px,
+      27px 16px,
+      27.325063px 12.77544px,
+      28.257359px 9.77208px,
+      29.732549px 7.05425px,
+      31.686292px 4.68629px,
+      34.054248px 2.73255px,
+      36.772078px 1.25736px,
+      39.775442px 0.32506px,
+      43px 0
+    );
+    transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .option {
+    cursor: pointer;
+    line-height: 142px;
+    text-align: center;
+    width: 33.33%;
+  }
+  .bar-outer {
+    clip-path: polygon(0 0, 120px 0, 120px 32px, 0 32px);
+    clip-path: polygon(
+      0 0,
+      0 32px,
+      104px 32px,
+      107.22456px 31.67494px,
+      110.22792px 30.74264px,
+      112.94575px 29.26745px,
+      115.31371px 27.31371px,
+      117.26745px 24.94575px,
+      118.74264px 22.22792px,
+      119.67494px 19.22456px,
+      120px 16px,
+      119.67494px 12.77544px,
+      118.74264px 9.77208px,
+      117.26745px 7.05425px,
+      115.31371px 4.68629px,
+      112.94575px 2.73255px,
+      110.22792px 1.25736px,
+      107.22456px 0.32506px,
+      104px 0
+    );
+    height: 32px;
+    pointer-events: none;
+    transition: clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+  }
+  .bar-outer.pos2 .bar-color {
+    clip-path: polygon(
+      360px 0,
+      360px 32px,
+      149px 32px,
+      145.775442px 31.67494px,
+      142.772078px 30.74264px,
+      140.054248px 29.26745px,
+      137.686292px 27.31371px,
+      135.732549px 24.94575px,
+      134.257359px 22.22792px,
+      133.325063px 19.22456px,
+      133px 16px,
+      133.325063px 12.77544px,
+      134.257359px 9.77208px,
+      135.732549px 7.05425px,
+      137.686292px 4.68629px,
+      140.054248px 2.73255px,
+      142.772078px 1.25736px,
+      145.775442px 0.32506px,
+      149px 0
+    );
+  }
+  .bar-outer.pos2 {
+    clip-path: polygon(
+      0 0,
+      0 32px,
+      210px 32px,
+      213.22456px 31.67494px,
+      216.22792px 30.74264px,
+      218.94575px 29.26745px,
+      221.31371px 27.31371px,
+      223.26745px 24.94575px,
+      224.74264px 22.22792px,
+      225.67494px 19.22456px,
+      226px 16px,
+      225.67494px 12.77544px,
+      224.74264px 9.77208px,
+      223.26745px 7.05425px,
+      221.31371px 4.68629px,
+      218.94575px 2.73255px,
+      216.22792px 1.25736px,
+      213.22456px 0.32506px,
+      210px 0
+    );
+  }
+  .bar-outer.pos3 .bar-color {
+    clip-path: polygon(
+      360px 0,
+      360px 32px,
+      256px 32px,
+      252.775442px 31.67494px,
+      249.772078px 30.74264px,
+      247.054248px 29.26745px,
+      244.686292px 27.31371px,
+      242.732549px 24.94575px,
+      241.257359px 22.22792px,
+      240.325063px 19.22456px,
+      240px 16px,
+      240.325063px 12.77544px,
+      241.257359px 9.77208px,
+      242.732549px 7.05425px,
+      244.686292px 4.68629px,
+      247.054248px 2.73255px,
+      249.772078px 1.25736px,
+      252.775442px 0.32506px,
+      256px 0
+    );
+  }
+  .bar-outer.pos3 {
+    clip-path: polygon(0 0, 333px 0, 333px 32px, 0 32px);
+    clip-path: polygon(
+      0 0,
+      0 32px,
+      317px 32px,
+      320.22456px 31.67494px,
+      323.22792px 30.74264px,
+      325.94575px 29.26745px,
+      328.31371px 27.31371px,
+      330.26745px 24.94575px,
+      331.74264px 22.22792px,
+      332.67494px 19.22456px,
+      333px 16px,
+      332.67494px 12.77544px,
+      331.74264px 9.77208px,
+      330.26745px 7.05425px,
+      328.31371px 4.68629px,
+      325.94575px 2.73255px,
+      323.22792px 1.25736px,
+      320.22456px 0.32506px,
+      317px 0
+    );
+  }
+  .bar-outer.left .bar-color {
+    transition-delay: 0;
+  }
+  .bar-outer.left {
+    transition-delay: 80ms;
+  }
+  .bar-outer.right .bar-color {
+    transition-delay: 80ms;
+  }
+  .bar-outer.right {
+    transition-delay: 0;
+  }
+.shwPwd{
+border:none;
+border-radius:5px;
+width:15px;
+height:15px;
+cursor:pointer;
+accent-color: blue;
+}
+/* loader*/
+.spinner {
+    width: 48px;
+    height: 48px;
+border: 5px solid grey;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+border-radius:50px;
+    }
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+/* loader2 */
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
